@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+  margin-top: 50px;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -15,9 +16,12 @@
 }
 
 .logo {
-  margin-top: 80px ;
+  /* margin-top: 80px ;
+  margin-bottom: 50px; */
   height: 200px;
   width: 200px;
+  justify-content:space-around;
+  padding: auto;
 }
 
 /**************************/
