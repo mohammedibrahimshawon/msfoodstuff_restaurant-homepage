@@ -227,6 +227,20 @@
   .grid {
     row-gap: 4.8rem;
   }
+  .logo {
+    /* margin-top: 80px ;
+    margin-bottom: 50px; */
+    height: 100px;
+    width: 100px;
+    justify-content:space-around;
+    /* padding: auto; */
+    /* padding: 0 4.8rem; */
+    padding: auto;
+    
+  }
+
+  
+
 
   .grid--2-cols,
   .grid--3-cols,
@@ -242,10 +256,15 @@
 
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
+    margin-bottom: 2.8rem;
+    padding-left: 20%;
+    
+    
   }
 
   .hero {
     padding: 0 3.2rem;
+    min-width: 140px;
   }
 
   .hero-img {

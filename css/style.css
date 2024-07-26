@@ -21,7 +21,10 @@
   height: 200px;
   width: 200px;
   justify-content:space-around;
+  /* padding: auto; */
+  /* padding: 0 4.8rem; */
   padding: auto;
+  
 }
 
 /**************************/
