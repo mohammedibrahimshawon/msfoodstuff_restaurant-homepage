@@ -27,6 +27,46 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+// Mobile navigation functionality
+// const btnMobileNav = document.querySelector('.btn-mobile-nav');
+// const navList = document.querySelector('.main-nav-list');
+
+// btnMobileNav.addEventListener('click', function () {
+//   navList.classList.toggle('nav-open');
+//   const menuIcon = document.querySelector('.icon-mobile-nav[name="menu-outline"]');
+//   const closeIcon = document.querySelector('.icon-mobile-nav[name="close-outline"]');
+
+//   menuIcon.style.display = menuIcon.style.display === 'none' ? 'block' : 'none';
+//   closeIcon.style.display = closeIcon.style.display === 'block' ? 'none' : 'block';
+// });
+
+// const btnMobileNav = document.querySelector('.btn-mobile-nav');
+// const navList = document.querySelector('.main-nav-list');
+
+// // Toggle mobile navigation
+// btnMobileNav.addEventListener('click', function (event) {
+//   navList.classList.toggle('nav-open');
+//   const menuIcon = document.querySelector('.icon-mobile-nav[name="menu-outline"]');
+//   const closeIcon = document.querySelector('.icon-mobile-nav[name="close-outline"]');
+  
+//   // Toggle between menu and close icons
+//   menuIcon.style.display = menuIcon.style.display === 'none' ? 'block' : 'none';
+//   closeIcon.style.display = closeIcon.style.display === 'block' ? 'none' : 'block';
+// });
+
+// // Make sure no link behavior is blocked
+// document.querySelectorAll('.main-nav-link').forEach(link => {
+//   link.addEventListener('click', function(event) {
+//     // Remove event.preventDefault() to allow links to work normally
+//     if (navList.classList.contains('nav-open')) {
+//       navList.classList.remove('nav-open');
+//       document.querySelector('.icon-mobile-nav[name="menu-outline"]').style.display = 'block';
+//       document.querySelector('.icon-mobile-nav[name="close-outline"]').style.display = 'none';
+//     }
+//   });
+// });
+
+
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
