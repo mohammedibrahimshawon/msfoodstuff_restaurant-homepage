@@ -16,16 +16,34 @@
 }
 
 .logo {
-  /* margin-top: 80px ;
-  margin-bottom: 50px; */
-  height: 200px;
-  width: 200px;
-  justify-content:space-around;
-  /* padding: auto; */
-  /* padding: 0 4.8rem; */
+  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Default to full width */
+  max-width: 200px; /* Limit maximum width */
   padding: auto;
-  
+  justify-content: space-around;
 }
+
+/* Small screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+  .logo {
+    max-width: 120px; /* Smaller logo for mobile */
+  }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .logo {
+    max-width: 160px; /* Slightly bigger for tablets */
+  }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  .logo {
+    max-width: 200px; /* Original size for large screens */
+  }
+}
+
 
 /**************************/
 /* NAVIGATION */
