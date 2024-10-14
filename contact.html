@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -13,6 +17,7 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="js/script.js"></script>
     <title>Contact - msfoodstuff</title>
     <style>
       @media (min-width: 1024px) {
@@ -28,30 +33,29 @@
   </head>
   <body class="bg-gray-50">
     <!-- Header -->
-    <header class="bg-white shadow-md">
-      <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-8">
+    <header class="header">
         <a href="#">
-          <img class="h-8" alt="msfood logo" src="img/omnifood-logo.png" />
+          <img class="logo" alt="msfood logo" src="img/omnifood-logo.png" />
         </a>
-        <nav>
-          <ul class="flex space-x-4 text-gray-700">
-            <li><a class="hover:text-gray-900" href="index.html">Home</a></li>
-            <li><a class="hover:text-gray-900" href="#">Products</a></li>
-            <li><a class="hover:text-gray-900" href="contact.html">Contact</a></li>
-            <li><a class="hover:text-gray-900" href="about.html">About</a></li>
-            <li><a class="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded" href="tel:+97158657650">Call us</a></li>
+  
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="index.html">Home</a></li>
+            <li><a class="main-nav-link" href="#">Products</a></li>
+            <li><a class="main-nav-link" href="contact.html">Contact</a></li>
+            <li><a class="main-nav-link" href="about.html">About</a></li>
+            <li><a class="main-nav-link nav-cta" href="tel:+97158657650">Call us</a></li>
           </ul>
         </nav>
-        <!-- Mobile Menu Toggle -->
-        <button class="btn-mobile-nav block lg:hidden">
+  
+        <button class="btn-mobile-nav">
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav hidden" name="close-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
-      </div>
-    </header>
+      </header>
 
     <!-- Hero Section with Cover Image -->
-    <section class="relative h-96 bg-cover bg-center hero-image" style="background-image: url('img/gallery/gallery-6.jpg');">
+    <section class="relative h-96 bg-cover bg-center hero-image" style="background-image: url('img/gallery/covver.jpg');">
       <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <h1 class="text-white text-4xl font-bold text-center lg:text-5xl">Get in Touch with Us</h1>
       </div>
