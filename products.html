@@ -21,7 +21,7 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="js/script.js"></script>
-    <title>About Us - msfoodstuff</title>
+    <title>Products - msfoodstuff</title>
   </head>
   <body>
     <header class="header">
@@ -32,8 +32,8 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="index.html">Home</a></li>
-          <li><a class="main-nav-link" href="#">Products</a></li>
-          <li><a class="main-nav-link" href="#">Contact</a></li>
+          <li><a class="main-nav-link" href="products.html">Products</a></li>
+          <li><a class="main-nav-link" href="contact.html">Contact</a></li>
           <li><a class="main-nav-link" href="about.html">About</a></li>
           <li><a class="main-nav-link nav-cta" href="tel:+97158657650">Call us</a></li>
         </ul>
@@ -46,46 +46,57 @@
     </header>
 
     <main>
-      <section class="section-about">
-        <div class="container center-text">
-          <span class="subheading">About Us</span>
-          <h2 class="heading-secondary">Delivering Healthy and Fresh Groceries Every Day</h2>
-          <p class="about-description">
-            At msfoodstuff, we believe in the power of fresh and healthy food. Founded with the mission to make nutritious groceries accessible to everyone, we have been delivering top-quality products straight to your doorstep. Our commitment is to provide an easy and reliable grocery shopping experience that you can count on.
-          </p>
-        </div>
+      <section class="section-products">
+        <div class="container">
+          <span class="subheading">Our Products</span>
+          <h2 class="heading-secondary">Find the Perfect Product for You</h2>
 
-        <div class="container grid grid--2-cols margin-bottom-md">
-          <div class="about-text-box">
-            <h3 class="heading-tertiary">Our Story</h3>
-            <p>
-              Our journey began with a simple idea: to offer a better way for people to shop for groceries. We noticed a growing demand for convenient, yet high-quality grocery options, and we wanted to meet that need. What started as a small local delivery service has now grown into a trusted provider for thousands of families across the region.
-            </p>
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search by category (e.g., fruits, vegetables, dairy)"
+            />
+            <button class="btn-search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
           </div>
 
-          <div class="about-img-box">
-            <img src="img/about-us.jpg" class="about-img" alt="About us image" />
-          </div>
-        </div>
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="img/product1.jpg" alt="Product 1" class="product-img" />
+              <h3 class="product-title">Fresh Apples</h3>
+              <p class="product-category">Fruits</p>
+              <p class="product-price">$5.99 / kg</p>
+              <button class="btn-add-to-cart">Add to Cart</button>
+            </div>
 
-        <div class="container grid grid--2-cols margin-bottom-md">
-          <div class="about-img-box">
-            <img src="img/about-team.jpg" class="about-img" alt="Our team image" />
-          </div>
+            <div class="product-card">
+              <img src="img/product2.jpg" alt="Product 2" class="product-img" />
+              <h3 class="product-title">Organic Carrots</h3>
+              <p class="product-category">Vegetables</p>
+              <p class="product-price">$2.99 / kg</p>
+              <button class="btn-add-to-cart">Add to Cart</button>
+            </div>
 
-          <div class="about-text-box">
-            <h3 class="heading-tertiary">Our Team</h3>
-            <p>
-              Our team is passionate about food and dedicated to delivering the best service possible. We work tirelessly to ensure that every item in your order is of the highest quality and reaches you in perfect condition. From our knowledgeable customer support staff to our careful delivery drivers, every member of our team plays a crucial role in our success.
-            </p>
-          </div>
-        </div>
+            <div class="product-card">
+              <img src="img/product3.jpg" alt="Product 3" class="product-img" />
+              <h3 class="product-title">Whole Milk</h3>
+              <p class="product-category">Dairy</p>
+              <p class="product-price">$3.49 / liter</p>
+              <button class="btn-add-to-cart">Add to Cart</button>
+            </div>
 
-        <div class="container center-text">
-          <h3 class="heading-tertiary">Why Choose Us?</h3>
-          <p>
-            We are more than just a grocery delivery service. We are committed to making your life easier by offering a wide range of products, flexible delivery options, and exceptional customer service. With msfoodstuff, you can trust that your groceries are in good hands.
-          </p>
+            <div class="product-card">
+              <img src="img/product4.jpg" alt="Product 4" class="product-img" />
+              <h3 class="product-title">Free-range Eggs</h3>
+              <p class="product-category">Dairy</p>
+              <p class="product-price">$4.99 / dozen</p>
+              <button class="btn-add-to-cart">Add to Cart</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -111,9 +122,7 @@
         </div>
 
         <div class="address-col">
-          <p class="footer-address">
-            1234 Elm Street, Dubai, UAE
-          </p>
+          <p class="footer-address">1234 Elm Street, Dubai, UAE</p>
           <p class="footer-contact">
             <a class="footer-link" href="tel:+97158657650">+971 586 57650</a><br />
             <a class="footer-link" href="mailto:support@msfoodstuff.com">support@msfoodstuff.com</a>
