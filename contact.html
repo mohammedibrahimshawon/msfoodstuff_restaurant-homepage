@@ -21,12 +21,13 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="js/script.js"></script>
-    <title>Products - msfoodstuff</title>
+    <title>Contact - msfoodstuff</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <a href="#">
-        <img class="logo" alt="msfood logo" src="img/omnifood-logo.png" />
+        <img class="logo responsive-logo" alt="msfood logo" src="img/omnifood-logo.png" />
       </a>
 
       <nav class="main-nav">
@@ -45,67 +46,45 @@
       </button>
     </header>
 
+    <!-- Main Content -->
     <main>
-      <section class="section-products">
+      <section class="section-contact">
         <div class="container">
-          <span class="subheading">Our Products</span>
-          <h2 class="heading-secondary">Find the Perfect Product for You</h2>
+          <h2 class="heading-secondary">Contact Us</h2>
 
-          <!-- Search Bar -->
-          <div class="search-bar">
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Search by category (e.g., fruits, vegetables, dairy)"
-            />
-            <button class="btn-search">
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
+          <!-- Contact Buttons -->
+          <div class="contact-buttons">
+            <a href="https://wa.me/97158657650" class="btn btn-whatsapp" target="_blank">
+              <ion-icon name="logo-whatsapp"></ion-icon> WhatsApp
+            </a>
+            <a href="tel:+97158657650" class="btn btn-call">
+              <ion-icon name="call-outline"></ion-icon> Call Now
+            </a>
           </div>
 
-          <!-- Product Grid -->
-          <div class="product-grid">
-            <div class="product-card">
-              <img src="img/product1.jpg" alt="Product 1" class="product-img" />
-              <h3 class="product-title">Fresh Apples</h3>
-              <p class="product-category">Fruits</p>
-              <p class="product-price">$5.99 / kg</p>
-              <button class="btn-add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-              <img src="img/product2.jpg" alt="Product 2" class="product-img" />
-              <h3 class="product-title">Organic Carrots</h3>
-              <p class="product-category">Vegetables</p>
-              <p class="product-price">$2.99 / kg</p>
-              <button class="btn-add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-              <img src="img/product3.jpg" alt="Product 3" class="product-img" />
-              <h3 class="product-title">Whole Milk</h3>
-              <p class="product-category">Dairy</p>
-              <p class="product-price">$3.49 / liter</p>
-              <button class="btn-add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-              <img src="img/product4.jpg" alt="Product 4" class="product-img" />
-              <h3 class="product-title">Free-range Eggs</h3>
-              <p class="product-category">Dairy</p>
-              <p class="product-price">$4.99 / dozen</p>
-              <button class="btn-add-to-cart">Add to Cart</button>
+          <!-- Map Layout -->
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=1234 Elm Street, Dubai, UAE&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img class="logo" alt="msfood logo" src="img/omnifood-logo.png" />
+            <img class="logo responsive-logo" alt="msfood logo" src="img/omnifood-logo.png" />
           </a>
 
           <ul class="social-links">
@@ -130,5 +109,72 @@
         </div>
       </div>
     </footer>
+
+    <style>
+      /* Responsive logo styling */
+     
+      @media (min-width: 768px) {
+        .responsive-logo {
+          padding: 1.5rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .responsive-logo {
+          padding: 2rem;
+        }
+      }
+
+      /* Contact button styles */
+      .contact-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .btn-whatsapp {
+        background-color: #25d366;
+      }
+
+      .btn-call {
+        background-color: #007aff;
+      }
+
+      .btn ion-icon {
+        margin-right: 0.5rem;
+      }
+
+      /* Map Styling */
+      .mapouter {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 100%;
+        height: 400px;
+      }
+
+      .gmap_iframe {
+        width: 100% !important;
+        height: 400px !important;
+      }
+    </style>
   </body>
 </html>
